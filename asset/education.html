@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        body {
+            background-image: url('bgimg.jpeg'); /* Ensure this path is correct */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 10px 0 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px auto;
+            max-width: 900px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2, h3 {
+            color: #6d308e;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        table th {
+            background-color: #f4f4f4;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Education</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="My experience.html">My experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Educational Background</h2>
+            <p>This is my <strong> average educational journey</strong>, highlighting institutions, qualifications, and <u>years of study</u>.</p>
+        </section>
+
+        <section>
+            <h3>My Academic Qualifications</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Qualification</th>
+                        <th>picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2022 - 2025</td>
+                        <td>Universiti Teknologi MARA</td>
+                        <td>Diploma in Information Management</td>
+                        <td><img src="uitmj.jpg" alt="uitmj"></td>
+                    </tr>
+                    <tr>
+                        <td>2017 - 2021</td>
+                        <td>SAM Paya Jaras</td>
+                        <td>High School</td>
+                        <td><img src="sampj.jpg" alt="sampj"></td>
+                    </tr>
+                    <tr>
+                        <td>2011 - 2016</td>
+                        <td>SK Seri Kundang</td>
+                        <td>Primary School</td>
+                        <td><img src="sksk.jpg" alt="sksk"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h3>Memorable Moments</h3>
+            <img src="first.jpg" alt="first" width="400">
+            <img src="last.jpg" alt="last" width="400">
+        </section>
+
+        <section>
+            <h3>Important Notice</h3>
+            <button id="notifyButton">Click for Notification</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Designed by Muhammad Baqir Hakim</p>
+    </footer>
+
+    <script>
+        document.getElementById("notifyButton").addEventListener("click", function() {
+            alert("Thank you for exploring my educational background!");
+        });
+    </script>
+
+</body>
+</html>
