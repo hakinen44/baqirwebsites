@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata with Thumbnails and Animations</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            background-image: url('bgimg.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #d10606;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-links a.active, .nav-links a:hover {
+            color: #f1c40f;
+        }
+
+        
+        main {
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Style for the thumbnail gallery */
+        .thumbnail-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            margin-top: 40px;
+        }
+
+        .thumbnail-gallery img {
+            width: 250px;
+            height: 250px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .thumbnail-gallery img:hover {
+            transform: scale(1.1);
+            border-color: #007BFF;
+        }
+
+        /* Style for personal info section */
+        .personal-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .personal-info ul li {
+            margin: 10px 0;
+        }
+
+        .personal-info ul li::before {
+            content: "✔️ ";
+            color: #007BFF;
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+
+        /* Improved styling for ordered list */
+        .personal-info ol {
+            padding-left: 0;
+            counter-reset: list-item;
+        }
+
+        .personal-info ol li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 18px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .personal-info ol li::before {
+            content: counter(list-item) ". ";
+            counter-increment: list-item;
+            font-weight: bold;
+            color: #3f9c9c;
+        }
+
+        .personal-info ol li:hover {
+            transform: translateX(5px);
+            background-color: #f1f1f1;
+        }
+
+        /* Style for footer */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Biodata</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="biodata.html" class="active">Biodata</a></li>
+                <li><a href="My experience.html">My Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Gallery</h3>
+        <div class="thumbnail-gallery">
+            <a target="_blank" href="profile.jpg"></a>
+            <img src="profile.jpg" alt="Profile Picture">
+            <a target="_blank" href="me2.jpg"></a>
+            <img src="me2.jpg" alt="Gallery Picture 2">
+            <a target="_blank" href="me5.jpg"></a>
+            <img src="me5.jpg" alt="Gallery Picture 3">
+        </div>
+        <h2>Personal Information</h2>
+        <section class="personal-info">
+            <ul>
+                <li><strong>Name:</strong> MUHAMMAD BAQIR HAKIM BIN AHMAD ARIFIN</li>
+                <li><strong>Date of Birth:</strong> 21/06/2004</li>
+                <li><strong>Email:</strong> <a href="mailto:baqirgakim@gmail.com">baqirgakim@gmail.com</a></li>
+                <li><strong>Phone:</strong> 0196763509</li>
+                <li><strong>Address:</strong> 182, Jalan Permata 8, Kampung Permata Kundang, 48020 Rawang, Selangor</li>
+            </ul>
+
+            <h3>My Favorite Foods</h3>
+            <ol>
+                <li>Nasi Goreng USA</li>
+                <li>Kuey Tiaw Goreng</li>
+                <li>Thosai</li>
+                <li>Satay</li>
+                <li>Yogurt</li>
+            </ol>
+        </section>
+
+        <audio controls autoplay>
+            <source src="love story.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MUHAMMAD BAQIR HAKIM</p>
+    </footer>
+</body>
+</html>

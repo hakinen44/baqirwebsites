@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family</title>
+    <style>
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-image: url('bgimg3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h2{
+            background: #005f73;
+            color: rgb(2, 2, 2);
+            padding: 20px;
+            text-align:right ;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #94d2bd;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        
+        .family-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .family-table th, .family-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .family-table th {
+            background-color: #005f73;
+            color: white;
+            font-size: 18px;
+        }
+
+        .family-table img {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Family</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="biodata.html">Biodata</a></li>
+                <li><a href="My experience.html">My Experience</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Family Members</h2>
+        <p>My family is the reason for my strength and happiness. Here are my family members:</p>
+        <table class="family-table">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="abah.jpg" alt="Abah"></td>
+                    <td>Ahmad Arifin Bin Sapar - Lecturer</td>
+                </tr>
+                <tr>
+                    <td><img src="mak.jpg" alt="Mak"></td>
+                    <td>Zaharah Binti Hussin - Lecturer</td>
+                </tr>
+                <tr>
+                    <td><img src="taqiy.jpg" alt="Taqiy"></td>
+                    <td>Muhammad Taqiy Haidar - Graduate Student</td>
+                </tr>
+                <tr>
+                    <td><img src="hadi.jpg" alt="Hadi"></td>
+                    <td>Soffiyul Hadi - Graduate Research Assistant</td>
+                </tr>
+                <tr><td><img src="qir.jpg" alt="qir"></td>
+                    <td>Muhammad Baqir Hakim - University student</td>
+                </tr>
+                <tr>
+                    <td><img src="imah.jpg" alt="imah"></td>
+                    <td>Zahra Hakimah - High School student</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 Muhammad Baqir Hakim</p>
+    </footer>
+    <script>
+        document.getElementById('showAlert').addEventListener('click', function() {
+            alert('Hello, welcome to my family page!');
+        });
+    </script>
+</body>
+</html>
